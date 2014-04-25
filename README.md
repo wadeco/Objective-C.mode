@@ -1,7 +1,7 @@
 Objective-C.mode
 ===============
 
-Apache configuration mode for Coda 2
+Objective-C mode for Coda 2
 
 ## Installation (non Mac App Store version)
 
