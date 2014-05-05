@@ -16,10 +16,6 @@
 		<regex>\:(\w+)</regex>
 	</symbol>
 	
-	<symbol id="language.include" color="#6C0540" image="SymbolGroup" casesensitive="yes" indentation="0"  hidden="no" useforautocomplete="no">
-    <regex>import\s\"([^"]+)\"</regex>
-	</symbol>
-	
 	<symbol id="language.function" hidden="yes" image="SymbolF()" indentation="1" useforautocomplete="yes">
     <regex>\(?[^\w]([a-z]{1}\w+\:)</regex>
   </symbol>
