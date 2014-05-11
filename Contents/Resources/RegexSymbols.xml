@@ -46,7 +46,7 @@
         </postprocess>
     </symbol>
 
-    <symbol id="language.class" font-weight="bold" image="SymbolM"  useforautocomplete="yes" indentation="0" ignoreblocks="no">
+    <symbol id="language.class" font-weight="bold" image="SymbolC"  useforautocomplete="yes" indentation="0" ignoreblocks="no">
         <regex>@implementation\s([^[:cntrl:]{]*)</regex>
         <postprocess>
             <find>([\n\r]| +)</find>
@@ -112,7 +112,7 @@
         <regex>@protocol\s([^[:cntrl:\s]{\/]*)</regex>
     </symbol>
 		
-    <symbol id="language.class" font-weight="bold" font-style="italic" image="SymbolM"  hidden="yes" useforautocomplete="yes">
+    <symbol id="language.class" font-weight="bold" font-style="italic" image="SymbolC"  hidden="yes" useforautocomplete="yes">
         <regex>@implementation\s([^[\s\n\r\t]{\/]*)</regex>
     </symbol>
     
