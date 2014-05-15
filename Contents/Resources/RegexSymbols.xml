@@ -8,10 +8,10 @@
 	
 	<symbol id="language.variable" hidden="yes" casesensitive="no" useforautocomplete="yes"  color="#006ff8" image="SymbolsO">
 		<regex>\*(\w+)</regex>
-		<regex>(\w+)\s\=</regex>
+		<regex>(\w+)\s+\=</regex>
 		<regex>(\w+);</regex>
 		<regex>\[(\w+)</regex>
-		<regex>\s(\w+)\)</regex>
+		<regex>\s+(\w+)\)</regex>
 		<regex>\((\w+)\)|\(!(\w+)\)</regex>
 		<regex>\:(\w+)</regex>
 	</symbol>
