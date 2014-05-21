@@ -118,6 +118,8 @@
         <string>IBAction</string>
         <string>IBOutlet</string>
         <string>self</string>
+        <string>strongSelf</string>
+        <string>weakSelf</string>
         <string>super</string>
         <string>ABAddPropertiesAndTypes</string>
         <string>ABAddRecord</string>
