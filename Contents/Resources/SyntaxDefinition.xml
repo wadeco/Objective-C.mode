@@ -7341,6 +7341,12 @@
       <keywords id="Base characters" useforautocomplete="yes" casesensitive="no" color="#006ff8">
         <regex>([\{\}\[\]|;\-\+\(\):])</regex>
       </keywords>
+      <keywords id="Plus Operator" scope="style.value.keyword">
+        <regex>(\+)</regex>
+      </keywords>
+      <keywords id="Minus Operator" scope="style.value.numeric">
+        <regex>(\-{1,2})</regex>
+      </keywords>
       <keywords id="Contants" font-weight="bold" hidden="yes" useforautocomplete="no" casesensitive="no" indentation="0" ignoreblocks="no" scope="style.at-rule">
         <regex>const ([A-Z0-9_]+)</regex>
       </keywords>
