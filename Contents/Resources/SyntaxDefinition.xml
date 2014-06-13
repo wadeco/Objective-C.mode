@@ -7327,7 +7327,7 @@
         <regex>\s(\w+)\]</regex>
       </keywords>
       <keywords id="Properties" useforautocomplete="yes" scope="language.variable.objective-c" casesensitive="no" color="#8735a5">
-        <regex>\.(\w{2,}+)</regex>
+        <regex>\.([a-z]{2,}+)</regex>
       </keywords>
       <keywords id="Literals" font-weight="bold" hidden="no" useforautocomplete="no" indentation="0" ignoreblocks="no" scope="markup.tag.attribute.value">
         <regex>(@)</regex>
