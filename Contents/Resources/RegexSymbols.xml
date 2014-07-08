@@ -57,6 +57,16 @@
 						<replace></replace>
         </postprocess>
     </symbol>
+    
+    <symbol id="language.css" font-weight="bold" image="SymbolH"  useforautocomplete="yes" indentation="0" ignoreblocks="no">
+        <regex>@interface\s(\w+)</regex>
+        <postprocess>
+            <find>([\n\r]| +)</find>
+            <replace> </replace>
+            <find>@interface\s|\s</find>
+            <replace></replace>
+        </postprocess>
+    </symbol>
 
     <symbol id="language.prototype" font-weight="bold" image="SymbolS" indentation="1" ignoreblocks="yes">
         <regex>@synthesize\s([^[:cntrl:]{]*);</regex>
@@ -71,7 +81,7 @@
         <postprocess>
             <find>([\n\r]| +)</find>
             <replace> </replace>
-						<find>@interface|@protocol|\s:\s\w+|\s</find>
+						<find>@protocol|\s:\s\w+|\s</find>
 						<replace></replace>
         </postprocess>
     </symbol>
@@ -118,7 +128,7 @@
         <regex>@implementation\s([^[\s\n\r\t]{\/]*)</regex>
     </symbol>
     
-    <symbol id="language.class" font-weight="bold" image="SymbolO"  hidden="yes" useforautocomplete="yes">
+    <symbol id="language.variable" font-weight="bold" image="SymbolO"  hidden="yes" useforautocomplete="yes">
         <regex>&lt;?(\w+)&gt;? \*\w+</regex>
     </symbol>
 	
