@@ -16,36 +16,19 @@
 		<regex>\:(\w+)</regex>
 	</symbol>
 	
-	<symbol id="language.function" hidden="yes" image="SymbolM" indentation="1" useforautocomplete="yes" casesensitive="no">
-    <regex>\(?[^\w]([a-z]{1}\w+\:)</regex>
-    <regex>\]\s(\w+)</regex>
-    <regex>\s(\w+)\]</regex>
-  </symbol>
   
-		<symbol id="language.function" hidden="no" image="SymbolF()" indentation="1" useforautocomplete="yes">
-	    <regex>([-|+][|\s]\([A-z\\s* ]+\)[^;|\n|\{]+)</regex>
-	    <postprocess>
-				<find>([-|+][|\s]\([A-z\\s* ]+\))</find>
-				<replace></replace>
-        <find>(:) *\([^\)]*\)</find>
-        <replace>:</replace>
-        <find>([\n\r\t\-\+]|\([^\)]*\))|;|\s$</find>
-        <replace></replace>
-	    </postprocess>
-			<arguments>(:)</arguments>
-			<captures>{"sender" : "1"}</captures>
-	  </symbol>
-	
-	<symbol id="language.function" image="SymbolF()" indentation="1" ignoreblocks="yes" useforautocomplete="yes">
-	        <regex>(?&lt;=[\n\r]|^)(?:[\w0-9_*]+\s+){1,3}[\w0-9_*]+[ \t]*\([\]\[\w0-9_,\s*&amp;/]*\)(?=\s*\{)</regex>
+    <symbol id="language.function" hidden="no" image="SymbolF()" indentation="1" useforautocomplete="yes">
+        <regex>(?:^|[\r\n])[ \t]*[-+][^(-;]*\([A-Za-z0-9 *_]*\)([A-Za-z0-9_ \t]+[^{;]*)</regex>
         <postprocess>
-            <find>\([^\)]*\)</find>
-            <replace>()</replace>
             <find>[\n\r]</find>
             <replace> </replace>
-            <find>[ \t]+</find>
+            <find>\s+</find>
             <replace> </replace>
+            <find> $</find>
+            <replace></replace>
         </postprocess>
+        <arguments>:(\s*\([^)]+\)\s*([^\s]+))</arguments>
+        <captures>{ "arguments" : "1" }</captures>
     </symbol>
 
     <symbol id="language.class" font-weight="bold" image="SymbolC"  useforautocomplete="yes" indentation="0" ignoreblocks="no">
