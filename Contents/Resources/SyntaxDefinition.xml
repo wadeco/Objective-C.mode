@@ -7338,7 +7338,7 @@
       <keywords id="Pointers" font-weight="normal" hidden="yes" useforautocomplete="no" indentation="0" ignoreblocks="yes" scope="markup.tag">
         <regex>(\*\w+)</regex>
       </keywords>
-      <keywords id="Base characters" useforautocomplete="yes" casesensitive="no" color="#006ff8">
+      <keywords id="Base characters" useforautocomplete="yes" casesensitive="no" color="#006ff8" scope="meta.base">
         <regex>([\{\}\[\]|;\-\+\(\):])</regex>
       </keywords>
       <keywords id="Plus Operator" scope="style.value.keyword">
