@@ -21,7 +21,7 @@
             <find> $</find>
             <replace></replace>
         </postprocess>
-        <arguments>:(\s*\([^)]+\)\s*([^\s]+))</arguments>
+        <arguments>:(\s*(\([^)]+\)\s*[^\s]+))</arguments>
         <captures>{ "arguments" : "1" }</captures>
     </symbol>
 
