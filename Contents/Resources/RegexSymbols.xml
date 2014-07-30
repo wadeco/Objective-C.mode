@@ -7,10 +7,8 @@
     </blocks>
 	
 	<symbol id="language.variable" hidden="yes" casesensitive="no" useforautocomplete="yes"  color="#006ff8" image="SymbolO">
-		<regex>\w+ \*?(\w+)[\s=;]</regex>
+		<regex>([A-Za-z\._]+)\s?=</regex>
 	</symbol>
-	
-  
     <symbol id="language.function" hidden="no" image="SymbolF()" indentation="1" useforautocomplete="yes">
         <regex>(?:^|[\r\n])[ \t]*[-+][^(-;]*\([A-Za-z0-9 *_]*\)([A-Za-z0-9_ \t]+[^{;]*)</regex>
         <postprocess>
