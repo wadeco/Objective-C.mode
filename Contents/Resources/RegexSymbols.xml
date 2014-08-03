@@ -10,8 +10,8 @@
 		<regex>([A-Za-z\._]+)\s?=</regex>
 	</symbol>
 	
-    <symbol id="language.function" hidden="no" image="SymbolF()" indentation="1" useforautocomplete="yes">
-        <regex>(?:^|[\r\n])[ \t]*[-+][^(-;]*\([A-Za-z0-9 *_]*\)([A-Za-z0-9_ \t]+[^{;]*)[{;]</regex>
+    <symbol id="language.method" image="SymbolM" indentation="1" ignoreblocks="yes" useforautocomplete="yes">
+        <regex>(?:^|[\r\n])[ \t]*[-+][^(-;]*\([A-Za-z0-9 *_]*\)([A-Za-z0-9_ \t]+[^{;]*)[\{;]</regex>
         <postprocess>
             <find>[\n\r]</find>
             <replace> </replace>
@@ -29,8 +29,8 @@
         <postprocess>
             <find>([\n\r]| +)</find>
             <replace> </replace>
-						<find>@implementation\s|\s</find>
-						<replace></replace>
+			<find>@implementation\s|\s</find>
+			<replace></replace>
         </postprocess>
     </symbol>
     
