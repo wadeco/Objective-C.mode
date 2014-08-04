@@ -5,25 +5,7 @@
         <beginregex>{</beginregex>
         <endregex>}</endregex>
     </blocks>
-	
-	<symbol id="language.variable" hidden="yes" casesensitive="no" useforautocomplete="yes"  color="#006ff8" image="SymbolO">
-		<regex>([A-Za-z\._]+)\s?=</regex>
-	</symbol>
-	
-    <symbol id="language.method" image="SymbolM" indentation="1" ignoreblocks="yes" useforautocomplete="yes">
-        <regex>(?:^|[\r\n])[ \t]*[-+][^(-;]*\([A-Za-z0-9 *_]*\)([A-Za-z0-9_ \t]+[^{;]*)[\{;]</regex>
-        <postprocess>
-            <find>[\n\r]</find>
-            <replace> </replace>
-            <find>\s+</find>
-            <replace> </replace>
-            <find> $</find>
-            <replace></replace>
-        </postprocess>
-        <arguments>:(\s*(\([^)]+\)\s*[^\s]+))</arguments>
-        <captures>{ "arguments" : "1" }</captures>
-    </symbol>
-
+    
     <symbol id="language.class" font-weight="bold" image="SymbolC"  useforautocomplete="yes" indentation="0" ignoreblocks="no">
         <regex>@implementation\s([^[:cntrl:]{]*)</regex>
         <postprocess>
@@ -42,6 +24,36 @@
             <find>@interface\s|\s</find>
             <replace></replace>
         </postprocess>
+    </symbol>
+	
+	<symbol id="language.variable" hidden="yes" casesensitive="no" useforautocomplete="yes"  color="#006ff8" image="SymbolO">
+		<regex>([A-Za-z\._]+)[\t ]+?=</regex>
+	</symbol>
+	
+	<symbol id="language.property" hidden="yes" casesensitive="no" useforautocomplete="yes" color="#006ff8" image="SymbolP">
+		<regex>@property[^\)]+\)?[ \t]?\w+[ \t]\*?(\w+)</regex>
+	</symbol>
+	
+	<symbol id="language.property.additional" hidden="yes" casesensitive="no" useforautocomplete="yes" color="#006ff8" image="SymbolP">
+		<regex>@property[^\)]+\)?[ \t]?\w+[ \t]\*?(\w+)</regex>
+		<postprocess>
+			<find>^</find>
+			<replace>_</replace>
+		</postprocess>
+	</symbol>
+	
+    <symbol id="language.method" image="SymbolM" indentation="1" ignoreblocks="yes" useforautocomplete="yes">
+        <regex>(?:^|[\r\n])[ \t]*[-+][^(-;]*\([A-Za-z0-9 *_]*\)([A-Za-z0-9_ \t]+[^{;]*)[\{;]</regex>
+        <postprocess>
+            <find>[\n\r]</find>
+            <replace> </replace>
+            <find>\s+</find>
+            <replace> </replace>
+            <find> $</find>
+            <replace></replace>
+        </postprocess>
+        <arguments>:(\s*(\([^)]+\)\s*[^\s]+))</arguments>
+        <captures>{ "arguments" : "1" }</captures>
     </symbol>
 
     <symbol id="language.prototype" font-weight="bold" image="SymbolS" indentation="1" ignoreblocks="yes">
