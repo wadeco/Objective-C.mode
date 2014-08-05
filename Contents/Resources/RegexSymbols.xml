@@ -28,6 +28,7 @@
 	
 	<symbol id="language.variable" hidden="yes" casesensitive="no" useforautocomplete="yes"  color="#006ff8" image="SymbolO">
 		<regex>([A-Za-z\._]+)[\t ]+?=</regex>
+		<regex>:\([^\)]+\)(\w+)</regex>
 	</symbol>
 	
 	<symbol id="language.property" hidden="yes" casesensitive="no" useforautocomplete="yes" color="#006ff8" image="SymbolP">
