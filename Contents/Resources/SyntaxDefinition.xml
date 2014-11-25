@@ -21,7 +21,7 @@
       <state-link mode="C" state="SingleComment"/>
       <state-link mode="C" state="String"/>
       
-      <keywords id = "Objective-C Import" useforautocomplete = "yes" scope="keyword">
+      <keywords id = "Objective-C Import" useforautocomplete = "yes" scope="keyword" highlightInOrder="yes">
         <regex>(\b#import\b)</regex>
       </keywords>
       
