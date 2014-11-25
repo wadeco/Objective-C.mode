@@ -20,6 +20,11 @@
       <state-link mode="C" state="Comment"/>
       <state-link mode="C" state="SingleComment"/>
       <state-link mode="C" state="String"/>
+      
+      <keywords id = "Objective-C Import" useforautocomplete = "yes" scope="keyword">
+        <regex>\b#import\b</regex>
+      </keywords>
+      
       <state id="NSString" color="#760f15" font-weight="normal" font-style="normal" foldable="no" scope="string.double.objective-c">
         <begin>
           <string>@"</string>
